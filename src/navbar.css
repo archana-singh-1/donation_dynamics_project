@@ -1,0 +1,54 @@
+.navbar{
+    height: 70px;
+    background-color:blue;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shopingCartElements{
+    display: flex;
+    width: 244px;
+    border: solid 2px black;
+    align-items: center;
+}
+.shopingCart{
+    width: 28px;
+
+}
+
+.logoElements{
+    width: 200px;
+    border: solid 2px black;
+}
+
+.login{
+    width: 65px;
+    height: 62px;
+    border-radius: 100%;
+    border: solid 2px black;
+    margin-left: 62px;
+
+}
+p{
+    color: dimgray;
+}
+
+.dropdown-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+.arrow {
+    transition: transform 0.3s ease;
+}
+  
+.arrow.open {
+    transform: rotate(180deg);
+}
+  
+.login-singup{
+    width: 20px;
+    border: solid 2px black;
+}
