@@ -16,11 +16,7 @@
     margin-bottom: 10px;
 }
 
-.monthly-giving p {
-    font-size: 0.9em;
-    color: #555;
-    margin-bottom: 15px;
-}
+
 
 .dolor {
     display: flex;
@@ -47,18 +43,16 @@
     margin-bottom: 15px;
 }
 
-.amount-button {
+.amount-buttons {
     background-color: #597E52;
     color: white;
     border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
+    padding: 8px 28px;
+    border-radius: 19px;
     cursor: pointer;
 }
 
-.amount-button:hover {
-    background-color: #495f42;
-}
+
 
 .add-to-cart {
     background-color: black;
@@ -70,11 +64,42 @@
     width: 100%;
 }
 
-.add-to-cart:hover {
-    background-color: #333;
-}
+
 
 .usd{
     padding-top: 12px;
 }
 
+.otherButton{
+    width: 200px;
+    border: solid 2px whitesmoke;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.amount-button_1{
+    border: none;
+    color: #555;
+    background: none;
+    padding: 8px;
+}
+.amount-button_2{
+    border: none;
+    color: #555;
+    background: none;
+    padding: 8px;
+}
+.amount-button_3{
+    border: none;
+    color: #555;
+    background: none;
+    padding: 8px;
+}
+
+.headline{
+
+    color: #555;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
