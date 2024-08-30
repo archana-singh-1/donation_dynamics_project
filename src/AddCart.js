@@ -5,6 +5,7 @@ function AddCart(){
             <div class="monthly-giving">
             <h3>Monthly Giving</h3>
             <p>Join our sustainer program and provide ongoing support. Your contribution makes a world of difference.</p>
+            <p className="dolor"><p className="dolarshap">$</p> <span className="money">50</span> <p className="usd"> USD </p></p>
             <div class="amount-options">
                 <button class="amount-button">$50</button>
                 <button class="amount-button">$25</button>

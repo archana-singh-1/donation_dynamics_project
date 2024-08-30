@@ -1,57 +1,80 @@
-.addCart{
+.addCart {
     background-color: white;
-    border-radius: 10px;
     position: absolute;
     left: 75%;
-    top:14%;
+    top: 14%;
     padding: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    width: 343px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
     font-family: Arial, sans-serif;
-
 }
 
 .monthly-giving h3 {
-    font-size: 24px;
+    font-size: 1.5em;
     margin-bottom: 10px;
 }
 
 .monthly-giving p {
-    font-size: 16px;
-    margin-bottom: 20px;
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.dolor {
+    display: flex;
+}
+
+.dolor .money {
+    font-size: 2.5em;
+    line-height: 1;
+    margin-left: 3px;
+    position: relative;
+    top: -0.2em;
+}
+
+.dolor span:last-child {
+    font-size: 1em;
+    position: relative;
+    top: 0.2em;
+    margin-left: 5px;
 }
 
 .amount-options {
     display: flex;
-    gap: 10px;
-    margin-bottom: 20px;
+    justify-content: space-between;
+    margin-bottom: 15px;
 }
 
 .amount-button {
-    background-color: #e0e0e0;
+    background-color: #597E52;
+    color: white;
     border: none;
+    padding: 10px 15px;
     border-radius: 5px;
-    padding: 10px 20px;
     cursor: pointer;
-    font-size: 16px;
 }
 
 .amount-button:hover {
-    background-color: #cccccc;
+    background-color: #495f42;
 }
 
 .add-to-cart {
-    width: 241px;
     background-color: black;
     color: white;
+    padding: 12px 20px;
     border: none;
     border-radius: 5px;
-    padding: 15px 20px;
-    font-size: 16px;
-    margin-left: 32px;
     cursor: pointer;
+    width: 100%;
 }
 
 .add-to-cart:hover {
-    background-color: #333333;
+    background-color: #333;
 }
+
+.usd{
+    padding-top: 12px;
+}
+
