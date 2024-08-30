@@ -1,12 +1,21 @@
-import './index.css'
+import './index.css';
 import Navbar from "./Navbar";
 import MainContainer from './MainContainer';
-function App(){
+import Details from './details/App.js';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; 
+
+function App() {
   return (
     <>
-      <Navbar/>
-      <MainContainer/>
+      <Navbar />
+      <Router>
+        <Routes>
+          <Route path="/" element={<MainContainer />} />
+          <Route path="/details" element={<Details />} />
+        </Routes>
+      </Router>
     </>
-  )
+  );
 }
+
 export default App;

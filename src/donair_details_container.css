@@ -1,0 +1,7 @@
+.donair_details_container{
+    border: solid 2px red;
+    margin-top: 60px;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+}

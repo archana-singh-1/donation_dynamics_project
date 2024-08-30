@@ -1,11 +1,12 @@
-/* .mainContainer{
+.mainContainer{
     border: solid 2px black;
-} */
+}
 
 
 .containerDetails{
     height: 602px;
     position: relative;
+    width: 100%;
 
 }
 .backgroundImage{
@@ -24,3 +25,5 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     margin: 0;
 }  
+
+
