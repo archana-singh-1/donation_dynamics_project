@@ -62,6 +62,15 @@
     color: white;
 }
 
-.icon{
-    padding: 10px;
+.fecbook{
+    padding-right: 10px;
+}
+
+.twiter{
+    padding-right: 10px;
+}
+
+.insta{
+    padding-left: 10px;
+
 }

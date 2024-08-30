@@ -18,17 +18,17 @@ function Footer() {
                     <Link to="/contact">Get in Touch</Link>
                 </div>
                 <div className="social-media-icons">
-                    <a href="https://www.facebook.com"  >
-                    <FaFacebook className="icon" />
+                    <a href="https://www.facebook.com"  className="fecbook">
+                        <FaFacebook className="icon" />
                     </a>
-                    <a href="https://www.twitter.com"  >
-                    <FaTwitter className="icon" />
+                    <a href="https://www.twitter.com"  className="twiter">
+                        <FaTwitter className="icon" />
                     </a>
                     <a href="https://www.linkedin.com" >
-                    <FaLinkedin className="icon" />
+                        <FaLinkedin className="icon" />
                     </a>
-                    <a href="https://www.instagram.com"  >
-                    <FaInstagram className="icon" />
+                    <a href="https://www.instagram.com" className="insta">
+                        <FaInstagram className="icon" />
                     </a>
                 </div>
             </div>
