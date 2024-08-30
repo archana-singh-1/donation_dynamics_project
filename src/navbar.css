@@ -1,6 +1,6 @@
 .navbar{
     height: 70px;
-    background-color:blue;
+    background-color:white;
     display: flex;
     justify-content: space-between;
 }
@@ -8,7 +8,6 @@
 .shopingCartElements{
     display: flex;
     width: 244px;
-    border: solid 2px black;
     align-items: center;
 }
 .shopingCart{
@@ -17,38 +16,49 @@
 }
 
 .logoElements{
-    width: 200px;
-    border: solid 2px black;
+
+    display: flex;
+    align-items: center;
 }
 
 .login{
     width: 65px;
     height: 62px;
     border-radius: 100%;
-    border: solid 2px black;
     margin-left: 62px;
 
 }
-p{
+.cart{
     color: dimgray;
+    padding-left: 4px;
 }
 
-.dropdown-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-  }
+  
+
   
 .arrow {
-    transition: transform 0.3s ease;
+    padding: 6px;
+    color: #776B5D;
 }
   
-.arrow.open {
-    transform: rotate(180deg);
+
+
+.agriculture{
+    width: 28px;
+    padding: 5px;
 }
-  
-.login-singup{
-    width: 20px;
-    border: solid 2px black;
+
+.logoP{
+    color: #597E52;
+    font-size: 20px;
+    line-height: 2px;
+    font-family: sans-serif;
+    padding: 15px;
+
+}
+
+.circleimage{
+    width: 67px;
+    height: 63px;
+    border-radius: 100%;
 }

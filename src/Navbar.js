@@ -1,35 +1,26 @@
-import React, { useState } from "react";
+
 import "./navbar.css"
 function Navbar(){
     
-        const [isOpen, setIsOpen] = useState(false);
-      
-        const toggleDropdown = () => {
-          setIsOpen(!isOpen);
-        };
     return (
         <>
             <div className="navbar">
-                <div className="logoElements">logo</div>
+                <div className="logoElements">
+                    <div className="agriculture"><img src="farmerIcon.png" alt="" className="agriculture"/></div>
+                    <p className="logoP">Farmer Harvest</p>
+                </div>
 
                 <div className="shopingCartElements">
                     <div className="shopingCart">
-                        <img src="shopingCart.png" alt="" className="shopingCart"/>
+                        <img src="shopping_cart.png" alt="" className="shopingCart"/>
                     </div>
-                    <p>Cart 4</p>
-                    <div className="login"></div>
+                    <p className="cart">Cart 4</p>
+                    <div className="login">
+                        <div><img  src="image.webp" alt="" className="circleimage"/></div>
+                    </div>
                     <div className="dropdown">
-                        <div className="dropdown-header" onClick={toggleDropdown}>
-                            <span className={`arrow ${isOpen ? "open" : ""}`}>▼</span>
-                        </div>
-                        {isOpen && (
-                        <div className="login-singup">
-                            <p className="dropdown-item">login</p>
-                            <p className="dropdown-item">signup</p>
-                        </div>
-                           
-                        )}
-                </div>
+                        <span className="arrow" >▼</span>
+                    </div>
             </div>
                 
 
