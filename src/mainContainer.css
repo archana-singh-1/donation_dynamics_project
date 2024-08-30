@@ -1,0 +1,26 @@
+/* .mainContainer{
+    border: solid 2px black;
+} */
+
+
+.containerDetails{
+    height: 602px;
+    position: relative;
+
+}
+.backgroundImage{
+    width: 100%;
+    height: 602px;
+}
+
+.heading {
+    width: 420px;
+    position: absolute;
+    top: 39%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 42px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin: 0;
+}  
