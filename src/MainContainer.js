@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import "./mainContainer.css"
-import DonaierDetailsContainer from "./Donair_details_container";
 import AddCart from './AddCart.js';
-import {data} from "./dummy_data.js"
+import MainContains from './MainConatin.js';
+
 
 
 function MainContainer(){
@@ -16,10 +16,7 @@ function MainContainer(){
                 <AddCart/>
             
             </div>
-
-            <DonaierDetailsContainer details={data[0]} details1={data[1]} details2={data[2]} />
-            <DonaierDetailsContainer details={data[3]} details1={data[4]} details2={data[5]} />
-            <DonaierDetailsContainer details={data[6]} details1={data[7]} details2={data[8]} />
+            <MainContains/>
         </div>
     )
 

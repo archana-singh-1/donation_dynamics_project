@@ -3,7 +3,7 @@ import Donair_details_col from "./Donair_details_col";
 
 function DonaierDetailsContainer({ details, details1, details2 }) {
     return (
-        <div className="donair_details_container">
+        <div className='row'>
             <Donair_details_col details={details} />
             <Donair_details_col details={details1} />
             <Donair_details_col details={details2} />

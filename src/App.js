@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import Navbar from "./Navbar";
 import MainContainer from './MainContainer';
@@ -16,7 +17,7 @@ function App() {
           <Route path="/details" element={<Details />} />
           <Route path="/about" element={< About />}/>
         </Routes>
-
+     
       <Footer/>
     </>
   );

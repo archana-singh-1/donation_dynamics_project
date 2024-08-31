@@ -1,8 +1,13 @@
-.donair_details_container{
-    margin-top: 60px;
-    max-width: 1200px;
-    margin: auto;
+@media (min-width: 1400px) {
+    .container-fluid {
+        max-width: 1200px;
+        margin: auto;
+    }
+}
+
+.row{
+    margin-top: 30px;
+    margin-bottom: 20px;
     display: flex;
-    gap:23px;
-    margin-top: 48px;
+    flex-wrap: nowrap;
 }
