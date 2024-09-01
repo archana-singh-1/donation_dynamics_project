@@ -4,8 +4,8 @@ function AddCart(){
         <div className="addCart">
             <div class="monthly-giving">
             <h3>Monthly Giving</h3>
-            <p className="headline">Join our sustainer program and provide ongoing support. Your contribution makes a world of difference.</p>
-            <p className="dolor"><p className="dolarshap">$</p> <span className="money">50</span> <p className="usd"> USD </p></p>
+            <p>Join our sustainer program and provide ongoing support. Your contribution makes a world of difference.</p>
+            <p className="dolor"><p className="dolarshap">Rs</p> <span className="money">50</span></p>
          
             <div class="amount-options">
                 <button class="amount-buttons">$50</button>

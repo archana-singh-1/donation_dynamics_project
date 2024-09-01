@@ -17,9 +17,23 @@
     left: 23%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 42px;
+    font-size: 36px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     margin: 0;
 }  
 
+
+
+.explore{
+    position: absolute;
+    top: 49%;
+    left: 11%;
+    width: 130px;
+    height: 43px;
+    background-color: #FFDC7F;
+    text-align: center;
+    border: solid 2px #FFEEAD;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); 
+
+}
 
