@@ -7,7 +7,7 @@ function Donair_details_col({details}){
             <p className="details">{details.description}</p>
 
             <div className="addCartDetails">
-                <p className="dolor"><p className="dolarshap">$</p> <span className="money">{details. amount}</span> <p className="usd"> USD </p></p>
+                <p className="dolor"><p className="dolarshap">Rs</p> <span className="money">{details. amount}</span></p>
                
 
             </div>
