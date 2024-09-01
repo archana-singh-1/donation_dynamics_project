@@ -13,7 +13,7 @@ function MainContainer(){
                     <img src="background.png" alt="background" className="backgroundImage" />
                 </Link>
                 <Link to="/details" className="link">
-                    <button className='explore'>Explore</button>
+                    <button className='explore'>Explore <img src="right_arrow.png" alt='' className='right_arrow'/></button>
                 </Link>
                 <div className="heading">Empowering Agriculture for a Sustainable Future</div>
                 <AddCart/>

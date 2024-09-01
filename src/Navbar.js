@@ -1,6 +1,18 @@
 import "./navbar.css";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 
 function Navbar() {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
+  const closeDropdown = () => {
+    setIsDropdownOpen(false);
+  };
+
   return (
     <div className="navbar">
       <div className="logoElements">
@@ -19,7 +31,13 @@ function Navbar() {
           <img src="image.webp" alt="User" className="circleimage" />
         </div>
         <div className="dropdown">
-          <span className="arrow">▼</span>
+          <span className="arrow" onClick={toggleDropdown}>▼</span>
+          {isDropdownOpen && (
+            <div className="dropdown-menu">
+              <Link to="/signup" className="dropdown-item" onClick={closeDropdown}>Signup</Link>
+              <Link to="/login" className="dropdown-item" onClick={closeDropdown}>Login</Link>
+            </div>
+          )}
         </div>
       </div>
     </div>

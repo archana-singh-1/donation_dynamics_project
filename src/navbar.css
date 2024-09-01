@@ -13,7 +13,7 @@
 
 .shopingCartElements{
     display: flex;
-    width: 244px;
+    width: 283px;
     align-items: center;
 }
 .shopingCart{
@@ -70,3 +70,32 @@
 } 
 
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-item {
+    padding: 8px 16px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #ddd;
+  }
+  
+  .arrow {
+    cursor: pointer;
+  }
