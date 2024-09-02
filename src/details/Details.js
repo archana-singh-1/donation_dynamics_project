@@ -1,4 +1,5 @@
 import "./details.css"
+import DonationForm from "../DonationForm";
 function Details(){
     return (
         <div className="container">
@@ -24,6 +25,9 @@ function Details(){
                 
                 
             </div>
+            <DonationForm/>
+
+            
             
         </div>
     )
