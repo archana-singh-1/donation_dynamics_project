@@ -8,14 +8,14 @@ function Footer() {
             <div className="footerDetails">
                 <div className="aboutUs">
                     <h3>About Us</h3>
-                    <p>We are dedicated to the empowerment of farmers and promoting sustainability.</p>
-                    <Link to="/about">Learn More</Link>
+                    <p className="decription">We are dedicated to the empowerment of farmers and promoting sustainability.</p>
+                    <Link to="/about" className="learn">Learn More</Link>
                 </div>
                 <div className="contactUs">
                     <h3>Contact Us</h3>
-                    <p>Phone: +123456789</p>
-                    <p>Email: support@farmerdonites.com</p>
-                    <Link to="/contact">Get in Touch</Link>
+                    <p className="phoneNum">Phone: +123456789</p>
+                    <p className="email">Email: support@farmerdonites.com</p>
+                    <Link to="/contact" className="touch">Get in Touch</Link>
                 </div>
                 <div className="social-media-icons">
                     <a href="https://www.facebook.com"  className="fecbook">

@@ -1,5 +1,4 @@
-.footer{
-  
+ .footer{
     background-color: #555843;
     margin-top: 100px;
 }
@@ -23,17 +22,13 @@
 
 .contactUs{
     width: 400px;
-  
-   
 
 }
 
 .socialMedia{
     width: 400px;
-   
     
 }
-
 
 .footerDetails {
     display: flex;
@@ -41,7 +36,6 @@
 }
 
 .footerDetails div {
-    margin: 10px;
     color: white;
 }
 
@@ -51,15 +45,14 @@
     color: white;
 }
 
-.footerDetails a {
-    color: #007bff;
+.learn{
     text-decoration: none;
-    color: white;
+    color:darkorchid;
+    text-decoration: underline;
 }
 
 .footerDetails a:hover {
     text-decoration: underline;
-    color: white;
 }
 
 .fecbook{
@@ -73,4 +66,84 @@
 .insta{
     padding-left: 10px;
 
+} 
+
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    height: 400px;
 }
+
+.footerDetails {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.aboutUs, .contactUs, .social-media-icons {
+    flex: 1;
+    margin: 10px;
+}
+
+.aboutUs h3, .contactUs h3 {
+    margin-bottom: 10px;
+}
+
+.icon {
+    font-size: 24px;
+    margin-right: 10px;
+    color: white;
+}
+.touch{
+    color:darkorchid;
+}
+
+
+@media screen and (max-width: 768px) {
+    .footerDetails {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .aboutUs, .contactUs, .social-media-icons {
+        margin: auto;
+        padding-top: 20px;
+    }
+
+    .icon {
+        font-size: 20px;
+        margin: 0 5px;
+    }
+    .decription{
+        font-size: 14px;
+    }
+    .footerDetails div {
+        color: white;
+        width: 242px;
+    }
+    .learn{
+        font-size: 13px;
+        color: darkorchid;
+        text-decoration: underline;
+    }
+
+    .phoneNum{
+        font-size: 14px;
+    }
+    .email{
+        font-size: 14px;
+
+    }
+    .touch{
+        font-size: 14px;
+        color: darkorchid;
+
+    }
+
+    
+}
+
+
