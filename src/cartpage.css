@@ -75,4 +75,12 @@
 }
 .dolor {
     display: flex;
+ }
+
+
+
+.total{
+    text-align: center;
+    color: red;
+    padding-top: 35px;
 }

@@ -4,6 +4,7 @@ import "./cartpage.css"
 
 function CartPage() {
   const { cartItems } = useContext(CartContext);
+  const totalAmount = cartItems.reduce((total, item) => total + item.amount, 0);
 
   return (
     <div className="cart-page">
@@ -22,7 +23,12 @@ function CartPage() {
            </div>
          
           ))}
+
+            <div className='totalAmount'>
+                <h3 className='total'>Total: Rs {totalAmount}</h3>
+            </div>
         </>
+        
       )}
     </div>
   );
