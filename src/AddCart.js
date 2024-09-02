@@ -3,16 +3,16 @@ function AddCart(){
     return(
         <div className="addCart">
             <div class="monthly-giving">
-            <h3>Monthly Giving</h3>
-            <p>Join our sustainer program and provide ongoing support. Your contribution makes a world of difference.</p>
+            <h3 className="Monthly_Giving">Monthly Giving</h3>
+            <p className="contribution">Join our sustainer program and provide ongoing support. Your contribution makes a world of difference.</p>
             <p className="dolor"><p className="dolarshap">Rs</p> <span className="money">50</span></p>
          
-            <div class="amount-options">
-                <button class="amount-buttons">$50</button>
+            <div className="amount-options">
+                <button className="amount-buttons">$50</button>
                 <div className="otherButton">
-                    <button class="amount-button_1">$25</button>
-                    <button class="amount-button_2">$10</button>
-                    <button class="amount-button_3">Other</button>
+                    <button className="amount-button_1">$25</button>
+                    <button className="amount-button_2">$10</button>
+                    <button className="amount-button_3">Other</button>
                 </div>
               
             </div>

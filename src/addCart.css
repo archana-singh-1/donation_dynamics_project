@@ -11,7 +11,7 @@
     font-family: Arial, sans-serif;
 }
 
-.monthly-giving h3 {
+.monthly-giving{
     font-size: 1.5em;
     margin-bottom: 10px;
 }
@@ -102,4 +102,90 @@
     font-size: 14px;
     font-weight: 500;
     margin-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .addCart{
+        position: absolute;
+        left: 64%;
+        top: -1%;
+    }
+    .monthly-giving{
+        width: 120px;
+
+    }
+    .Monthly_Giving{
+        font-size: 10px;
+    }
+    .contribution{
+        font-size: 10px;
+        padding-top: 8px;
+
+    }
+    .dolor{
+        font-size: 10px;
+    }
+    .dolor span:last-child {
+        font-size: 8px;
+        position: relative;
+        top: 5px;
+        margin-left: 2px;
+    }
+    .dolarshap{
+        font-size: 9px;
+        font-weight: 500;
+    }
+    
+    .amount-buttons {
+        background-color: #597E52;
+        color: white;
+        border: none;
+        padding: 1px 14px;
+        border-radius: 19px;
+        cursor: pointer;
+        font-size: 9px;
+        width: 41px;
+    }
+
+    .amount-options {
+        margin-bottom: 15px;
+        display: flex;
+        margin-top: 8px;
+    }
+    .amount-button_1{
+        
+        padding: 0;
+        font-size: 10px;
+    }
+    .amount-button_2{
+       
+        padding: 0;
+        padding-left: 4px;
+        font-size: 10px;
+    }
+    .amount-button_3{
+      
+        padding: 0;
+        padding-left: 4px;
+        font-size: 10px;
+    }
+
+    .otherButton{
+        border: solid 2px whitesmoke;
+        width: 200px;
+    }
+    .monthly-giving{
+        font-size: 0;
+    }
+    .add-to-cart {
+        background-color: black;
+        color: white;
+        padding: 3px 11px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+        font-size: 11px;
+    }
+
 }
