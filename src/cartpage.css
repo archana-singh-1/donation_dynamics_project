@@ -1,11 +1,34 @@
-.col-sm-12 {
+.cart-page{
+    margin: auto;
+    margin-top: 30px;
     padding: 10px;
     border: solid 4px whitesmoke;
     transition: transform 0.1s ease, box-shadow 0.1s ease; 
-    flex: 100%;
-    max-width: 100%;
+
+}
+.addCartData{
+    width: 400px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px;
+    border: solid 4px whitesmoke;
+    transition: transform 0.1s ease, box-shadow 0.1s ease; 
+
+}
+.Your_Cart{
+    text-align: center;
+    color: blueviolet;
+    font-size: 25px;
+    font-weight: 500;
 }
 
+.empty{
+    text-align: center;
+    padding: 13px;
+    font-size: 19px;
+    color: red;
+
+}
 
 .img_1{
     width: 100%;
@@ -22,7 +45,6 @@
 .details{
     font-weight: 400;
     padding-left: 30px;
-    
 
 
 }
@@ -41,35 +63,16 @@
     font-weight: 500;
     padding-left: 19px;
 }
-.money{
+.moneys{
     font-size: 15px;
     font-weight: 500;
     margin-top: 2px;
-    padding-left: 2px;
-  
+    padding-left: 30px;
+    padding-top: 12px;
+
+    
 
 }
 .dolor {
     display: flex;
-}
-
-
-@media (max-width: 768px){
-    .details {
-        text-align: center;
-        font-weight: 400;
-        padding-top: 12px;
-        padding-bottom: 12px;
-        padding-left: 24px;
-        padding-right: 24px;
-        font-size: 13px;
-    }
-    .dolarshap{
-        font-size: 14px;
-        font-weight: 500;
-        padding-left: 40px;
-        padding-bottom: 28px;    
-    }
-           
-
 }

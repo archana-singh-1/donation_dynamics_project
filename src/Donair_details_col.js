@@ -13,6 +13,7 @@ function Donair_details_col({ details }) {
     <div className="col-sm-12 col-md-3">
       <img src={details.imgSrc} alt="" className="img_1" />
       <div className="fetchdataDetails">
+        
         <p className="title">{details.title}</p>
         <p className="details">{details.description}</p>
       </div>

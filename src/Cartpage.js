@@ -1,24 +1,28 @@
 import React, { useContext } from 'react';
 import { CartContext } from './CartContext';
+import "./cartpage.css"
 
 function CartPage() {
   const { cartItems } = useContext(CartContext);
 
   return (
     <div className="cart-page">
-      <h2>Your Cart</h2>
+      <h2 className='Your_Cart'>Your Cart</h2>
       {cartItems.length === 0 ? (
-        <p>Your cart is empty.</p>
+        <p className='empty'>Your cart is empty.</p>
       ) : (
-        <ul>
+        <>
           {cartItems.map((item, index) => (
-            <li key={index}>
-              <h3>{item.title}</h3>
-              <p>{item.description}</p>
-              <p>Price: Rs {item.amount}</p>
-            </li>
+            <div className='addCartData'>
+               <img src={item.imgSrc} alt="" className="img_1" />
+              <h3 className='title'>{item.title}</h3>
+              <p className='details'>{item.description}</p>
+              <p className='moneys'>Rs {item.amount}</p>
+            
+           </div>
+         
           ))}
-        </ul>
+        </>
       )}
     </div>
   );
