@@ -35,7 +35,6 @@
     margin: auto;
     margin-top: 20px;
     width: 1027px;
-    text-align: center;
     color: #524C42;
     font-size: 21px
 
@@ -43,6 +42,7 @@
 .donateFarmer{
     color: brown;
     padding-top: 36px;
+    text-align: center;
 }
 
 .welcome{
@@ -50,7 +50,7 @@
 }
 
 .support{
-    padding-right: 191px;
+    padding-right: 215px;
     padding-top: 40px;
     color: cadetblue;
     font-size: 23px;
@@ -58,7 +58,7 @@
 }
 
 .joinwithUs{
-    padding-right: 286px;
+    padding-right: 303px;
     padding-top: 17px;
     color: #524C42;
     font-size: 23px;
@@ -128,5 +128,68 @@
     font-size: 18px;
     color: #524C42;
     font-weight: 300;
+
+}
+
+@media (max-width: 768px) {
+    .give_donation {
+        font-size: 1.5rem;
+    }
+
+    .best{
+        font-size: 18px;
+    }
+
+    .textConatin, .areas {
+        width: 100%;
+    }
+
+   .farmers {
+        padding-left: 47px;
+        padding-right: 6px;
+    }
+    .Machinery{
+        padding-left: 47px;
+        padding-right: 6px;
+    }
+    .organic{
+        padding-left: 47px;
+        padding-right: 6px;
+
+    }
+
+    .helpUs, .seed, .educationSupport {
+        font-size: 16px;
+    }
+    .support{
+        font-size: 18px;
+        padding-left: 18px;
+        padding-right: 0;
+    }
+    .welcome{
+        padding-top: 20px;
+        padding-left: 18px;
+        padding-right: 18px;
+        font-weight: 100;
+        font-size: 16px;
+    }
+    .joinwithUs{
+    font-size: 18px;
+    padding-left: 18px;
+    padding-right: 0;
+    }
+
+    .teamImg {
+        margin-top: 40px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .impact{
+        font-size: 18px;
+        padding-left: 18px;
+    }
+
+    
 
 }

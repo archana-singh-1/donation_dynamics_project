@@ -23,3 +23,14 @@
     cursor: pointer;
     font-size: 16px;
 }
+
+@media (max-width: 768px) {
+    .donation-form-container {
+        width: 92%;
+        padding: 10px;
+    }
+  
+    .donate-button {
+      font-size: 14px;
+    }
+  }
