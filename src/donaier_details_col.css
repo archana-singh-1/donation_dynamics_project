@@ -14,15 +14,39 @@
 .img_1{
     width: 100%;
     height: 253px;
+    object-fit: cover;
 }
 
 .title{
     text-align: center;
     font-weight: 600;
+    
 }
 
 .details{
     text-align: center;
     font-weight: 400;
+
+
+}
+
+
+@media (max-width: 768px){
+    .details {
+        text-align: center;
+        font-weight: 400;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 24px;
+        padding-right: 24px;
+        font-size: 13px;
+    }
+    .dolarshap{
+        font-size: 14px;
+        font-weight: 500;
+        padding-left: 40px;
+        padding-bottom: 28px;    
+    }
+           
 
 }

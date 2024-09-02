@@ -8,10 +8,10 @@ function AddCart(){
             <p className="dolor"><p className="dolarshap">Rs</p> <span className="money">50</span></p>
          
             <div className="amount-options">
-                <button className="amount-buttons">$50</button>
+                <button className="amount-buttons">Rs50</button>
                 <div className="otherButton">
-                    <button className="amount-button_1">$25</button>
-                    <button className="amount-button_2">$10</button>
+                    <button className="amount-button_1">Rs25</button>
+                    <button className="amount-button_2">Rs10</button>
                     <button className="amount-button_3">Other</button>
                 </div>
               
