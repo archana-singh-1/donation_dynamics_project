@@ -1,24 +1,46 @@
-import React, { useState } from 'react';
-import "./donationForm.css"
+import React, { useState, useContext } from 'react';
+import { CartContext } from './CartContext';
+import "./donationForm.css";
 
 function DonationForm() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     amount: '',
-    message: ''
+    message: '',
+    image: null
   });
 
+  const { addToCart } = useContext(CartContext);
+
   const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
+    if (e.target.name === 'image') {
+      setFormData({
+        ...formData,
+        [e.target.name]: e.target.files[0]
+      });
+    } else {
+      setFormData({
+        ...formData,
+        [e.target.name]: e.target.value
+      });
+    }
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-    alert("Thank you for your donation!");
+    e.preventDefault();
+
+    const newItem = {
+      name: formData.name,
+      email: formData.email,
+      description: formData.message,
+      amount: parseFloat(formData.amount),
+      imgSrc: formData.image ? URL.createObjectURL(formData.image) : ''
+    };
+
+    addToCart(newItem);
+    alert("Thank you for your donation! Your donation has been added to the cart.");
+    setFormData({ name: '', email: '', amount: '', message: '', image: null });
   };
 
   return (
@@ -30,7 +52,7 @@ function DonationForm() {
           <input 
             type="text" 
             name="name" 
-            placeholder=' Enter Your Name'
+            placeholder='Enter Your Name'
             value={formData.name} 
             onChange={handleChange} 
             required 
@@ -52,7 +74,7 @@ function DonationForm() {
           <input 
             type="number" 
             name="amount" 
-            placeholder='Enter Your Amounts'
+            placeholder='Enter Your Amount'
             value={formData.amount} 
             onChange={handleChange} 
             required 
@@ -63,6 +85,15 @@ function DonationForm() {
           <textarea 
             name="message" 
             value={formData.message} 
+            onChange={handleChange} 
+          />
+        </div>
+        <div className="form-group">
+          <label>Image (Optional):</label>
+          <input 
+            type="file" 
+            name="image" 
+            accept="image/*" 
             onChange={handleChange} 
           />
         </div>

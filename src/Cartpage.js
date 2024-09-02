@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { CartContext } from './CartContext';
-import "./cartpage.css"
+import "./cartpage.css";
 
 function CartPage() {
   const { cartItems } = useContext(CartContext);
@@ -14,24 +14,23 @@ function CartPage() {
       ) : (
         <>
           {cartItems.map((item, index) => (
-            <div className='addCartData'>
-               <img src={item.imgSrc} alt="" className="img_1" />
-              <h3 className='title'>{item.title}</h3>
-              <p className='details'>{item.description}</p>
-              <p className='moneys'>Rs {item.amount}</p>
-            
-           </div>
-         
+            <div className='addCartData' key={index}>
+              {item.imgSrc && <img src={item.imgSrc} alt="Donation" className="img_1" />}
+              {item.name && <p className='details'>Name: {item.name}</p>}
+              {item.email && <p className='details'>Email: {item.email}</p>}
+              <p className='details'>Description: {item.description}</p>
+              <p className='moneys'> Rs {item.amount}</p>
+            </div>
           ))}
 
-            <div className='totalAmount'>
-                <h3 className='total'>Total: Rs {totalAmount}</h3>
-            </div>
+          <div className='totalAmount'>
+            <h3 className='total'>Total: Rs {totalAmount}</h3>
+          </div>
         </>
-        
       )}
     </div>
   );
 }
 
 export default CartPage;
+     
