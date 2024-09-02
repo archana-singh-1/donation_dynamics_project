@@ -18,6 +18,7 @@
 }
 .shopingCart{
     width: 28px;
+    display: flex;
 
 }
 
@@ -34,12 +35,18 @@
     margin-left: 62px;
 
 }
-.cart{
+.cart {
     color: dimgray;
+    display: flex;
     padding-left: 4px;
+    padding-right: 9px;
+    gap: 7px;
+    align-items: center;
 }
 
-  
+.no-underline {
+    text-decoration: none;
+}
 
   
 .arrow {
@@ -112,6 +119,8 @@
     align-items: center;
   }
   
+
+  
   @media screen and (max-width: 768px) {
     .navbar {
       align-items: center;
@@ -123,7 +132,10 @@
     }
   
     .shopingCartElements {
-      font-size: 11px;
+        font-size: 11px;
+        gap: 48px;
+        width: 154px;
+        display: flex;
     }
   
     .dropdown-menu {
@@ -139,6 +151,7 @@
 
     .login{
         margin-left: 0;
+        width: 1px;
     }
     .logoP, .cart {
         font-size: 14px;

@@ -1,8 +1,10 @@
+import React, { useContext, useState } from 'react';
 import "./navbar.css";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { CartContext } from './CartContext';
 
 function Navbar() {
+  const { cartItems } = useContext(CartContext);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const toggleDropdown = () => {
@@ -23,10 +25,12 @@ function Navbar() {
       </div>
 
       <div className="shopingCartElements">
-        <div className="shopingCart">
-          <img src="shopping_cart.png" alt="Shopping Cart" className="shopingCart" />
-        </div>
-        <p className="cart">Cart 4</p>
+        <Link to="/cart" className="no-underline">
+          <div className="shopingCart">
+            <img src="shopping_cart.png" alt="Shopping Cart" className="shopingCart" />
+            <p className="cart">Cart <span>{cartItems.length}</span></p>
+          </div>
+        </Link>
         <div className="login">
           <img src="image.webp" alt="User" className="circleimage" />
         </div>

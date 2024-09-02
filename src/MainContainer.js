@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import "./mainContainer.css"
-import AddCart from './AddCart.js';
 import MainContains from './MainConatin.js';
 
 
@@ -16,7 +15,6 @@ function MainContainer(){
                     <button className='explore'>Explore <img src="right_arrow.png" alt='' className='right_arrow'/></button>
                 </Link>
                 <div className="heading">Empowering Agriculture for a Sustainable Future</div>
-                <AddCart/>
             
             </div>
             <MainContains/>

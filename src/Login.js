@@ -33,7 +33,7 @@ function Login() {
             required
           />
         </div>
-        <button type="submit" className="lginButton">Login</button>
+        <button type="submit" className="loginButton">Login</button>
       </form>
     </div>
   );

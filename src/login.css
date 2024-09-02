@@ -27,7 +27,7 @@
     border-bottom: solid 2px #8F887C;
   }
   
-.lginButton {
+.loginButton {
     width: 100%;
     padding: 10px;
     background-color: #007bff;
@@ -38,9 +38,6 @@
     margin-top: 90px;
   }
   
-  button:hover {
-    background-color: #0056b3;
-  }
   
 .loginText{
     text-align: center;

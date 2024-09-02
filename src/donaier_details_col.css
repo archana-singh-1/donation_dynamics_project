@@ -6,10 +6,6 @@
     max-width: 100%;
 }
 
-.col-sm-12:hover {
-    transform: scale(1.00); 
-    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); 
-}
 
 .img_1{
     width: 100%;
@@ -28,6 +24,31 @@
     font-weight: 400;
 
 
+}
+.add-to-cart {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.dolarshap{
+    font-size: 12px;
+    font-weight: 500;
+    padding-left: 19px;
+}
+.money{
+    font-size: 15px;
+    padding-left: 3px;
+    font-weight: 500;
+    margin-top: 2px;
+
+}
+.dolor {
+    display: flex;
 }
 
 
