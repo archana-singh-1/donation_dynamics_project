@@ -129,7 +129,29 @@
     font-weight: 300;
 
 }
+.backButton{
+    margin-top: -551px;
+    margin-left: 789px;
+    display: flex;
+    align-items: center;
+    height: 53px;
+    background-color: white;
+    text-align: center;
+    border:none;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    font-size: 19px;
+    font-weight: 600;
+    color: #524C42;
 
+}
+.back_arrow{
+    width: 35px;
+    height: 26px;
+}
+.link{
+    text-decoration: none;
+}
 @media (max-width: 768px) {
     .give_donation {
         font-size: 1.5rem;

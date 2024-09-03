@@ -1,5 +1,6 @@
 import "./details.css"
 import DonationForm from "../DonationForm";
+import { Link } from "react-router-dom";
 function Details(){
     return (
         <div className="container">
@@ -26,6 +27,10 @@ function Details(){
                 
             </div>
             <DonationForm/>
+            <Link to="/" className="link">
+                <button className='backButton'>Back to Home<img src="back_arrow.png" alt='' className='back_arrow' /></button>
+            </Link>
+            
 
             
             
