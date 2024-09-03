@@ -1,0 +1,108 @@
+.aboutContainer{
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    margin: auto;
+
+}
+.aboutBack{
+    margin-top: 40px;
+}
+.aboutBackgroundImg{
+    height: 589px;
+    width: 100%;
+}
+.aboutus{
+    margin-top: 40px;
+
+}
+
+.weDo{
+    margin-top: 40px;
+}
+
+.detailsAboutUs{
+    color: #524C42;
+    font-size: 19px;
+    padding: 20px;
+
+
+}
+
+.improvements{
+    font-weight: 600;
+    font-size: 19px;
+    padding: 3px;
+
+}
+
+.bng{
+    color: #524C42;
+    font-size: 18px;
+    font-weight: 300;
+
+}
+
+.groups{
+    color: #524C42;
+    margin-top: 31px;
+    font-size: 19px;
+
+}
+
+.FarmersGroup{
+    color: #524C42;
+    margin-top: 31px;
+    font-size: 19px;
+
+}
+
+.key{
+    color: #524C42;
+    margin-top: 40px;
+    font-size: 19px;
+
+}
+.led{
+    margin-top: 40px;
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 700;
+
+
+}
+.run_by{
+    color: #524C42;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+
+
+@media (max-width: 768px) {
+    .aboutContainer {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .aboutus,
+    .weDo {
+        font-size: 24px;
+    }
+
+    .detailsAboutUs,
+    .improvements,
+    .groups,
+    .FarmersGroup,
+    .key,
+    .led,
+    .run_by {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .aboutBackgroundImg {
+        max-height: 300px;
+    }
+}
+
