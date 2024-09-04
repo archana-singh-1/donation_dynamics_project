@@ -10,16 +10,15 @@ function Signup() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-
+    
     try {
-      const response = await axios.post('mongodb://localhost:27017/signup', {
+      const response = await axios.post('http://localhost:4000/signup', {
         username,
         email,
         password
       });
-      setMessage('Signup successful!');
     } catch (error) {
-      setMessage('Error: ' + error.response.data.message);
+      setMessage('Error: ' + (error.response?.data?.message || 'Something went wrong'));
     }
   };
 
@@ -57,7 +56,7 @@ function Signup() {
             placeholder="Enter your password"
           />
         </div>
-        <button type="submit" className='singupButton'>Signup</button>
+        <button type="submit" className='signupButton'>Signup</button>
         {message && <p>{message}</p>}
       </form>
     </div>

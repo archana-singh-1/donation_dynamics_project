@@ -139,6 +139,13 @@
   font-size: 20px;
 }
 
+.homeLink{
+  text-decoration: none;
+  color: #776B5D;
+  font-size: 20px;
+
+}
+
   @media screen and (max-width: 768px) {
     .navbar {
       align-items: center;
@@ -193,6 +200,10 @@
     .contactLink{
       font-size: 15px;
 
+    }
+    .homeLink {
+      font-size: 15px;
+      padding-right: 13px;
     }
    
   }
