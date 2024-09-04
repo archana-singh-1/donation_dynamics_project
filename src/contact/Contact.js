@@ -1,5 +1,5 @@
 import "./contact.css";
-
+import  DonationContactForm from "../ContactUsForm";
 function Contact (){
     return(
         <div className="contactContainer">
@@ -61,6 +61,7 @@ function Contact (){
                 
 
             </div>
+        <DonationContactForm/>
         </div>
 
     )
