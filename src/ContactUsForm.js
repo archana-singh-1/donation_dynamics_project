@@ -68,7 +68,7 @@ function DonationContactForm() {
             onChange={handleChange}
           />
         </div>
-        <button type="submit" className="donate-button">Submit</button>
+        <button type="submit" className="donate-buttons">Submit</button>
       </form>
     </div>
   );

@@ -111,7 +111,6 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
   }
   
   .logoElements, .shopingCartElements {
@@ -120,11 +119,36 @@
   }
   
 
-  
+
+.contact_us{
+  display: flex;
+  padding-left: 375px;
+  align-items: center;
+}
+
+.contactLink{
+  text-decoration: none;
+  color: #776B5D;
+  font-size: 20px;
+}
+
+.aboutLink{
+  text-decoration: none;
+  color: #776B5D;
+  padding-right: 151px;
+  font-size: 20px;
+}
+
   @media screen and (max-width: 768px) {
     .navbar {
       align-items: center;
     }
+
+    .contact_us {
+      display: flex;
+      padding: 0;
+      align-items: center;
+  }
   
     .logoElements, .shopingCartElements {
       width: 100%;
@@ -136,6 +160,7 @@
         gap: 48px;
         width: 154px;
         display: flex;
+        padding-left: 10px;
     }
   
     .dropdown-menu {
@@ -160,7 +185,15 @@
         width: 30px;
         height: 30px;
         margin-top: 16px;
-      }
+    }
+    .aboutLink {
+      padding-right: 10px;
+      font-size: 15px;
+    }
+    .contactLink{
+      font-size: 15px;
+
+    }
    
   }
   

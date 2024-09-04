@@ -23,6 +23,11 @@ function Navbar() {
         </div>
         <p className="logoP">Farmer Harvest</p>
       </div>
+      <div className='contact_us '>
+        <div className='about_div'>  <Link to="/about"  className='aboutLink'>About</Link ></div>
+        <div className='contact_div'>  <Link to="/contact"  className='contactLink'>Contact</Link></div>
+
+      </div>
 
       <div className="shopingCartElements">
         <Link to="/cart" className="no-underline">
