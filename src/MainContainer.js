@@ -24,13 +24,13 @@ function MainContainer() {
                 <div className="carousel-container">
                     <Slider {...settings}>
                         <div>
-                            <img src="slide_1.jpg" alt="Image 1" />
+                            <img src="slide_1.jpg" alt="" />
                         </div>
                         <div>
-                            <img src="slide_2.jpg" alt="Image 2" />
+                            <img src="slide_2.jpg" alt="" />
                         </div>
                         <div>
-                            <img src="slider_6.jpg" alt="Image 3" />
+                            <img src="slider_6.jpg" alt="" />
                         </div>
                     </Slider>
                 </div>

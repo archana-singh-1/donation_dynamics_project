@@ -1,0 +1,70 @@
+import "./contact.css";
+
+function Contact (){
+    return(
+        <div className="contactContainer">
+            <img src="conatc.avif" alt=""/>
+            <h4 className="conatctHeader">Together, We Can Create a Brighter Future .</h4>
+
+            <div className="rating">
+                <div className="succes">
+                    <div className="image_box">
+                        <img src="success.png"/>
+                    </div>
+                    <div className="rating_box">
+                        <h3 className="p_tag">99k</h3>
+                        <p className="stories">Success Stories</p>
+                    </div>
+                    
+
+                </div>
+
+                <div className="succes">
+                    <div className="image_box"> 
+                        <img src="succes_2.png"/>
+                    </div>
+                    <div className="rating_box">
+                        <h3 className="p_tag">5k</h3>
+                        <p className="stories">Adopted farmer's</p>
+                    </div>
+                    
+
+                </div>
+
+                <div className="succes">
+                    <div className="image_box">
+                        <img src="/succes_3.png"/>
+                    </div>
+                    <div className="rating_box">
+                        <h3 className="p_tag">25+</h3>
+                        <p className="stories">Non-profit communities</p>  
+                    </div>
+                    
+
+                </div>
+
+
+                <div className="succes">
+                    <div className="image_box">
+                        <img src="succes_4.png"/>
+                    </div>
+                    <div className="rating_box">
+                        <h3 className="p_tag">260+</h3>
+                        <p className="stories">working volunteers</p>
+                    </div>
+                    
+
+                </div>
+
+
+
+                
+
+            </div>
+        </div>
+
+    )
+    
+
+}
+export default Contact;

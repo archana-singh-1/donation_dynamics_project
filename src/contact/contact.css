@@ -1,0 +1,50 @@
+.contactContainer{
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    margin: auto;
+    margin-top: 40px;
+
+}
+
+.conatctHeader{
+    width: 420px;
+    position: absolute;
+    top: 39%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    text-shadow: 6px 2px 3px rgba(0, 0, 0, 0.7);
+    margin: 0;
+}
+
+.rating{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 28px;
+    border: solid 2px whitesmoke;
+    background: white;
+    padding: 25px;
+}
+
+.succes{
+    display: flex;
+}
+.p_tag {
+    font-size: 34px;
+    padding-left: 27px;
+    font-style: initial;
+    color: darkblue;
+}
+
+.stories{
+    color:#88D66C;
+    font-style:oblique;
+    padding-left: 6px;
+    text-transform: uppercase;
+    
+}
+.rating_box{
+    display: flex;
+    flex-direction: column;
+}

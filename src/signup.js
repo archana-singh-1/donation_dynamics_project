@@ -1,13 +1,26 @@
 import React, { useState } from 'react';
+import axios from 'axios'; 
 import './signup.css'; 
 
 function Signup() {
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [message, setMessage] = useState(''); 
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
+
+    try {
+      const response = await axios.post('mongodb://localhost:27017/signup', {
+        username,
+        email,
+        password
+      });
+      setMessage('Signup successful!');
+    } catch (error) {
+      setMessage('Error: ' + error.response.data.message);
+    }
   };
 
   return (
@@ -45,6 +58,7 @@ function Signup() {
           />
         </div>
         <button type="submit" className='singupButton'>Signup</button>
+        {message && <p>{message}</p>}
       </form>
     </div>
   );
