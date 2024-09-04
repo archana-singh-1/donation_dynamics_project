@@ -6,7 +6,11 @@
     margin-top: 40px;
 
 }
+.aboutImage{
+    width: 100%;
+    object-fit: cover;
 
+}
 .conatctHeader{
     width: 420px;
     position: absolute;
@@ -47,4 +51,33 @@
 .rating_box{
     display: flex;
     flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    .aboutImage{
+        height: auto;
+    }
+
+    .contactContainer{
+        width: 100%;
+    }
+
+    .conatctHeader {
+        top: 24%;
+        left: 35%;
+        width: auto;
+        font-size: 26px;
+    }
+    .image_1{
+        width: 27px;
+    }
+    .p_tag{
+        font-size: 21px;
+        padding-left: 12px;
+    }
+
+    .stories {
+        font-size: 7px
+    }
+   
 }

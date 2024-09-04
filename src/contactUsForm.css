@@ -40,3 +40,11 @@
 .contactushTwo{
     text-align: center;
 }
+
+@media (max-width: 768px) {
+    .donation-contact-form-container {
+        width: auto;
+
+    }
+
+}
