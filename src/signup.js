@@ -17,8 +17,9 @@ function Signup() {
         email,
         password
       });
+      setMessage('Signup successful!');
     } catch (error) {
-      setMessage('Error: ' + (error.response?.data?.message || 'Something went wrong'));
+      setMessage('Something went wrong');
     }
   };
 
