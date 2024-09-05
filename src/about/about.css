@@ -14,17 +14,20 @@
 }
 .aboutus{
     margin-top: 40px;
+    font-family: sans-serif
 
 }
 
 .weDo{
     margin-top: 40px;
+    font-family: sans-serif
 }
 
 .detailsAboutUs{
     color: #524C42;
     font-size: 19px;
     padding: 20px;
+    font-family: sans-serif
 
 
 }
@@ -33,6 +36,7 @@
     font-weight: 600;
     font-size: 19px;
     padding: 3px;
+    font-family: sans-serif
 
 }
 
@@ -40,6 +44,7 @@
     color: #524C42;
     font-size: 18px;
     font-weight: 300;
+    font-family: sans-serif
 
 }
 
@@ -47,6 +52,7 @@
     color: #524C42;
     margin-top: 31px;
     font-size: 19px;
+    font-family: sans-serif
 
 }
 
@@ -54,6 +60,7 @@
     color: #524C42;
     margin-top: 31px;
     font-size: 19px;
+    font-family: sans-serif
 
 }
 
@@ -61,6 +68,7 @@
     color: #524C42;
     margin-top: 40px;
     font-size: 19px;
+    font-family: sans-serif
 
 }
 .led{
@@ -68,6 +76,7 @@
     margin-top: 40px;
     font-size: 20px;
     font-weight: 700;
+    font-family: sans-serif
 
 
 }
@@ -75,6 +84,7 @@
     color: #524C42;
     font-size: 18px;
     font-weight: 200;
+    font-family: sans-serif
 }
 
 

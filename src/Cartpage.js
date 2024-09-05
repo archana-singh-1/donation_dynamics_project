@@ -18,8 +18,9 @@ function CartPage() {
               {item.imgSrc && <img src={item.imgSrc} alt="Donation" className="img_1" />}
               {item.name && <p className='details'>Name: {item.name}</p>}
               {item.email && <p className='details'>Email: {item.email}</p>}
-              <p className='details'>Description: {item.description}</p>
               <p className='moneys'> Rs {item.amount}</p>
+              <p className='details'>Description: {item.description}</p>
+              
             </div>
           ))}
 
