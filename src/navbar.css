@@ -163,11 +163,9 @@
     }
   
     .shopingCartElements {
-        font-size: 11px;
-        gap: 48px;
-        width: 154px;
-        display: flex;
-        padding-left: 10px;
+      gap: 48px;
+      display: flex;
+      padding-left: 10px;
     }
   
     .dropdown-menu {
@@ -177,8 +175,9 @@
   
     .dropdown-item {
       display: block;
-      padding: 10px;
       text-align: center;
+      font-size: 7px;
+      padding: 5px 12px
     }
 
     .login{

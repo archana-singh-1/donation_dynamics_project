@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 import cors from 'cors';
 import { UserSchemaModel } from "./models/userSchema.js";
 
+
 const PORT = process.env.PORT || 4000;
 
 const app = express();
