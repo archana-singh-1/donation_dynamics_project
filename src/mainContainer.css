@@ -6,7 +6,6 @@
 }
 .backgroundImage{
     width: 100%;
-    height: 602px;
 }
 
 .heading {
@@ -70,16 +69,190 @@
 
 
 .carousel-container {
-    width: 80%;
+    width: 100%;
     margin: auto;
 }
 
 .slick-slide img {
     width: 100%;
-    height: 500px; 
     object-fit: cover; 
     border-radius: 8px; 
 }
+
+.grid-container {
+    padding: 20px;
+}
+
+.grid-container .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid-container .col-sm-12 {
+    flex: 1 0 30%; /* Make 3 columns */
+    margin: 10px;  /* Add some spacing between columns */
+}
+
+.slick-prev, .slick-next {
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slick-prev:hover, .slick-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slick-prev {
+    left: -50px;
+}
+
+.slick-next {
+    right: -50px;
+}
+.mainContainer {
+    width: 100%;
+}
+
+.carousel-section {
+    margin-bottom: 30px;  /* Ensure there is space between carousel and row section */
+}
+
+
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    padding: 5px;  /* 5px gap between images */
+}
+
+.carousel-img {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.explore-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.heading {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.row-section {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col-md-4 {
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.details-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.details-content {
+    text-align: center;
+}
+
+.mainContainer {
+    width: 100%;
+}
+
+
+.carousel-column {
+    margin: 0 10px; /* Add space between columns */
+}
+
+/* Custom Arrow Styles */
+.slick-prev, .slick-next {
+    background: gray;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.slick-prev {
+    left: -40px;
+}
+
+.slick-next {
+    right: -40px;
+}
+
+/* Ensure arrows are positioned correctly */
+.carousel-container .slick-prev, 
+.carousel-container .slick-next {
+    top: 40%;
+}
+
+.carousel-img {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Explore Button */
+.link {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.heading {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+/* Grid Section */
+.grid-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.grid-item {
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.grid-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.grid-content {
+    padding: 10px 0;
+}
+
 
 
 @media (max-width: 768px) {
