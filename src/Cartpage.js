@@ -13,8 +13,8 @@ function CartPage() {
         <p className='empty'>Your cart is empty.</p>
       ) : (
         <>
-          {cartItems.map((item, index) => (
-            <div className='addCartData' key={index}>
+          {cartItems.map((item) => (
+            <div className='addCartData' key={item._id}>
               {item.imgSrc && <img src={item.imgSrc} alt="Donation" className="img_1" />}
               {item.name && <p className='details'>Name: {item.name}</p>}
               {item.email && <p className='details'>Email: {item.email}</p>}
@@ -24,7 +24,7 @@ function CartPage() {
 
               <button 
                 className="delete-btn" 
-                onClick={() => removeFromCart(index)}>
+                onClick={() => removeFromCart(item._id)}>
                 <img src="deleteIcon.png" className='deleteIcon'/>
               </button>
             </div>
