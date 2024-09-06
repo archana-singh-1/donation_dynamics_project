@@ -39,7 +39,7 @@ function MainContainer() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3, 
+    slidesToShow: 4, 
     slidesToScroll: 1,
     autoplay: true,
     pauseOnHover: true,
@@ -57,12 +57,16 @@ function MainContainer() {
           <Slider {...settings}>
             {data.map((details, index) => (
               <div key={index} className="carousel-item">
-                <Donair_details_col details={details} />
+                <div className="donation-card">
+                  <img src={details.imgSrc} alt={details.title} className="donation-img" />
+                  <h3>{details.title}</h3>
+                  <p>{details.description}</p>
+                </div>
               </div>
             ))}
           </Slider>
         </div>
-      </div>
+    </div>
       <div className="grid-container">
         <div className="row">
           {data.map((details, index) => (

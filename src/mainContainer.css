@@ -26,7 +26,6 @@
 
 .grid-container .col-sm-12 {
     flex: 1 0 30%; 
-    margin: 10px;  
     font-family: "Roboto", sans-serif;
 }
 
@@ -75,6 +74,7 @@
     padding: 15px;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .details-img {
@@ -93,6 +93,7 @@
 .carousel-column {
     margin: 0 10px; 
     font-family: "Roboto", sans-serif;
+  
 }
 
 .slick-prev, .slick-next {
@@ -120,13 +121,6 @@
 
 
 
-.grid-container {
-    width: 90%;
-    margin: 0 auto;
-    font-family: "Roboto", sans-serif;
-}
-
-
 
 .grid-item {
     margin: 10px;
@@ -150,3 +144,80 @@
 
 
 
+.donation-card{
+    width: 400px;
+}
+
+
+.donation-img{
+    width: 100%;
+    height: 300px;
+}
+
+
+
+.containerDetails {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+   
+  }
+  
+  .carousel-container {
+    position: relative;
+  }
+  
+  .carousel-item {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+
+  .donation-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+  }
+  
+
+  
+  .donation-img {
+    width: 100%;
+    height: 209px;
+    object-fit: cover;
+    border-radius: 178px;
+    margin-bottom: 15px;
+  }
+  
+  .donation-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .donation-card p {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+ 
+
+.custom-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+  }
+  
+ 
+
+.grid-container{
+    max-width: 1200px;
+}
