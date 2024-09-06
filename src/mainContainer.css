@@ -27,6 +27,7 @@
 .grid-container .col-sm-12 {
     flex: 1 0 30%; 
     font-family: "Roboto", sans-serif;
+    margin-top: 52px;
 }
 
 
@@ -220,15 +221,29 @@
 
 .grid-container{
     max-width: 1200px;
-    margin-top: 164px;
+    margin-top: 81px;
 }
 
 .gallery{
     font-size: 26px;
     padding-bottom: 36px;
     font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    padding: 0;
 }
 
 .anchorTag{
     text-decoration: none;
+}
+
+.detailsArrow{
+    width: 74px;
+    padding: 9px;
+    margin-right: 977px;
+}
+
+.detailBackarrow{
+    width: 61px;
+    padding: 7px;
+
 }

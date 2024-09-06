@@ -1,4 +1,4 @@
-// App.js
+
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; 
 import './index.css';
@@ -19,13 +19,13 @@ function App() {
       <Navbar />
         <Routes>
           <Route path="/" element={<MainContainer />} />
-          <Route path="/details" element={<Details />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/cart" element={<CartPage />} /> 
           <Route path="/itemDetails" element={<ItemDetails />} /> 
+          <Route path="/details" element={<Details />} /> 
         </Routes>
       <Footer/>
     </Router>

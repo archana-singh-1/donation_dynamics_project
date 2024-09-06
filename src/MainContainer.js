@@ -1,6 +1,7 @@
 import React from 'react';
 import './mainContainer.css';
 import Donair_details_col from './Donair_details_col';
+import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 import { data } from './dummy_data';
 import "slick-carousel/slick/slick.css";
@@ -68,9 +69,14 @@ function MainContainer() {
           </Slider>
         </div>
       </div>
+            <Link to="/details">
+                <img src="right_arrow.png" alt="" className='detailsArrow'/>
+            </Link>
+
+           
       
       <div className="grid-container" id="grid-section">
-        <p className='gallery'>Gallery</p>
+        <p className='gallery'>Give monthly</p>
         <div className="row">
           {data.map((details, index) => (
             <Donair_details_col key={index} details={details} />

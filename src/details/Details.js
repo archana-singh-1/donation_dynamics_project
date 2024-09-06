@@ -26,7 +26,7 @@ function Details(){
                 
             </div>
             <Link to="/" className="link">
-                <button className='backButton'>Back to Home<img src="back_arrow.png" alt='' className='back_arrow' /></button>
+                <img src="back_arrow.png" alt='' className='back_arrow' />
             </Link>
             
 

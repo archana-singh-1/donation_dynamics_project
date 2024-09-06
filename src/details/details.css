@@ -1,14 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: "Roboto", sans-serif;
 }
 
 .detailsBackground {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "Roboto", sans-serif;
 }
 
 
@@ -21,12 +24,14 @@
     margin-bottom: 10px;
     color: blueviolet;
     margin-top: 30px;
+    font-family: "Roboto", sans-serif;
 }
 
 .best {
     font-size: 1.2rem;
     margin-bottom: 20px;
     color: brown;
+    font-family: "Roboto", sans-serif;
 }
 
 .textConatin {
@@ -35,17 +40,20 @@
     margin-top: 20px;
     width: 1027px;
     color: #524C42;
-    font-size: 21px
+    font-size: 21px;
+    font-family: "Roboto", sans-serif;
 
 }
 .donateFarmer{
     color: brown;
     padding-top: 36px;
     text-align: center;
+    font-family: "Roboto", sans-serif;
 }
 
 .welcome{
     padding-top: 20px;
+    font-family: "Roboto", sans-serif;
 }
 
 .support{
@@ -53,6 +61,7 @@
     padding-top: 40px;
     color: cadetblue;
     font-size: 23px;
+    font-family: "Roboto", sans-serif;
 
 }
 
@@ -60,6 +69,7 @@
     padding-right: 303px;
     padding-top: 17px;
     color: #524C42;
+    font-family: "Roboto", sans-serif;
     font-size: 23px;
 
 
@@ -70,11 +80,13 @@
     padding-top: 40px;
     font-size: 23px;
     color: #524C42;
+    font-family: "Roboto", sans-serif;
 
 }
 
 .teamImg{
     margin-top: 40px;
+    font-family: "Roboto", sans-serif;
 }
 
 .Machinery{
@@ -82,10 +94,12 @@
     font-size: 22px;
     color: burlywood;
     margin-top: 20px;
+    font-family: "Roboto", sans-serif;
 
 }
 .areas{
     width: 1027px;
+    font-family: "Roboto", sans-serif;
 
 }
 
@@ -94,6 +108,7 @@
     font-size: 18px;
     color: #524C42;
     font-weight: 300;
+    font-family: "Roboto", sans-serif;
 
 }
 
@@ -102,6 +117,7 @@
     font-size: 22px;
     color: burlywood;
     margin-top: 30px;
+    font-family: "Roboto", sans-serif;
 
 }
 
@@ -110,6 +126,7 @@
     font-size: 18px;
     color: #524C42;
     font-weight: 300;
+    font-family: "Roboto", sans-serif;
 
 
 }
@@ -119,6 +136,7 @@
     font-size: 22px;
     color: burlywood;
     margin-top: 30px;
+    font-family: "Roboto", sans-serif;
 
 }
 
@@ -127,6 +145,7 @@
     font-size: 18px;
     color: #524C42;
     font-weight: 300;
+    font-family: "Roboto", sans-serif;
 
 }
 .backButton{
@@ -143,11 +162,14 @@
     font-size: 19px;
     font-weight: 600;
     color: #524C42;
+    font-family: "Roboto", sans-serif;
 
 }
 .back_arrow{
-    width: 35px;
-    height: 26px;
+    width: 47px;
+    margin-left: 942px;
+    padding: 1px;
+    font-family: "Roboto", sans-serif;
 }
 .link{
     text-decoration: none;
