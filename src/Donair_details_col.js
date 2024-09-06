@@ -72,11 +72,11 @@ function Donair_details_col({ details }) {
                 value={selectedAmount}
               >
                 <option value="">Select Amount</option>
-                <option value="450">Rs450</option>
-                <option value="500">Rs500</option>
-                <option value="550">Rs550</option>
-                <option value="600">Rs600</option>
-                <option value="650">Rs650</option>
+                <option value="450">Rs <span>450</span></option>
+                <option value="500">Rs <span>500</span></option>
+                <option value="550">Rs <span>550</span></option>
+                <option value="600">Rs <span>600</span></option>
+                <option value="650">Rs <span>650</span></option>
               </select>
             </div>
           )}

@@ -3,7 +3,7 @@ import { CartContext } from './CartContext';
 import "./cartpage.css";
 
 function CartPage() {
-  const { cartItems } = useContext(CartContext);
+  const { cartItems, removeFromCart } = useContext(CartContext); 
   const totalAmount = cartItems.reduce((total, item) => total + item.amount, 0);
 
   return (
@@ -19,8 +19,14 @@ function CartPage() {
               {item.name && <p className='details'>Name: {item.name}</p>}
               {item.email && <p className='details'>Email: {item.email}</p>}
               <p className='moneys'> Rs {item.amount}</p>
-              <p className='details'>Description: {item.description}</p>
-              <p className='details'>Frequency: {item.paymentFrequency}</p> 
+              <p className='details'>{item.description}</p>
+              <p className='details'>{item.paymentFrequency}</p> 
+
+              <button 
+                className="delete-btn" 
+                onClick={() => removeFromCart(index)}>
+                <img src="deleteIcon.png" className='deleteIcon'/>
+              </button>
             </div>
           ))}
 
