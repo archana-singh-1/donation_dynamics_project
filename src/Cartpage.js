@@ -20,7 +20,7 @@ function CartPage() {
               {item.email && <p className='details'>Email: {item.email}</p>}
               <p className='moneys'> Rs {item.amount}</p>
               <p className='details'>Description: {item.description}</p>
-              
+              <p className='details'>Frequency: {item.paymentFrequency}</p> 
             </div>
           ))}
 
@@ -34,4 +34,3 @@ function CartPage() {
 }
 
 export default CartPage;
-     

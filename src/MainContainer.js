@@ -4,17 +4,21 @@ import './mainContainer.css';
 import Donair_details_col from './Donair_details_col';
 import Slider from 'react-slick';
 import { data } from './dummy_data';
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+
 
 function SampleNextArrow(props) {
   const { className, onClick } = props;
   return (
     <div
-      className={className}
-      style={{ display: "block", background: "gray", right: "10px", padding: "5px" }}
+      className={`${className} custom-arrow`} 
       onClick={onClick}
-    />
+    >
+      <FontAwesomeIcon icon={faChevronRight} style={{ color: "black", fontSize: "26px", }} />
+    </div>
   );
 }
 
@@ -22,10 +26,11 @@ function SamplePrevArrow(props) {
   const { className, onClick } = props;
   return (
     <div
-      className={className}
-      style={{ display: "block", background: "gray", left: "10px", padding: "5px" }}
+      className={`${className} custom-arrow`} 
       onClick={onClick}
-    />
+    >
+      <FontAwesomeIcon icon={faChevronLeft} style={{ color: "black", fontSize: "26px" }} />
+    </div>
   );
 }
 
@@ -34,16 +39,15 @@ function MainContainer() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,  
+    slidesToShow: 3, 
     slidesToScroll: 1,
     autoplay: true,
-    // autoplaySpeed: 2000,
     pauseOnHover: true,
     arrows: true,  
-    nextArrow: <SampleNextArrow />,  
+    nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
-    centerMode: true, 
-    centerPadding: '5px'  
+    centerMode: true,  
+    centerPadding: '10px',  
   };
 
   return (
@@ -59,7 +63,6 @@ function MainContainer() {
           </Slider>
         </div>
       </div>
-
       <div className="grid-container">
         <div className="row">
           {data.map((details, index) => (
