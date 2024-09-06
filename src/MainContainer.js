@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './mainContainer.css';
 import Donair_details_col from './Donair_details_col';
 import Slider from 'react-slick';
@@ -13,10 +12,7 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons
 function SampleNextArrow(props) {
   const { className, onClick } = props;
   return (
-    <div
-      className={`${className} custom-arrow`} 
-      onClick={onClick}
-    >
+    <div className={`${className} custom-arrow`} onClick={onClick}>
       <FontAwesomeIcon icon={faChevronRight} style={{ color: "black", fontSize: "26px", }} />
     </div>
   );
@@ -25,14 +21,12 @@ function SampleNextArrow(props) {
 function SamplePrevArrow(props) {
   const { className, onClick } = props;
   return (
-    <div
-      className={`${className} custom-arrow`} 
-      onClick={onClick}
-    >
+    <div className={`${className} custom-arrow`} onClick={onClick}>
       <FontAwesomeIcon icon={faChevronLeft} style={{ color: "black", fontSize: "26px" }} />
     </div>
   );
 }
+
 
 function MainContainer() {
   const settings = {
@@ -50,6 +44,10 @@ function MainContainer() {
     centerPadding: '10px',  
   };
 
+  const scrollToGrid = () => {
+    document.getElementById('grid-section').scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div className="mainContainer">
       <div className="containerDetails">
@@ -57,17 +55,22 @@ function MainContainer() {
           <Slider {...settings}>
             {data.map((details, index) => (
               <div key={index} className="carousel-item">
+                <a href="#grid-section" onClick={scrollToGrid} className='anchorTag'>
                 <div className="donation-card">
-                  <img src={details.imgSrc} alt={details.title} className="donation-img" />
+
+                    <img src={details.imgSrc} alt={details.title} className="donation-img" />
                   <h3>{details.title}</h3>
                   <p>{details.description}</p>
                 </div>
+                </a>
               </div>
             ))}
           </Slider>
         </div>
-    </div>
-      <div className="grid-container">
+      </div>
+      
+      <div className="grid-container" id="grid-section">
+        <p className='gallery'>Gallery</p>
         <div className="row">
           {data.map((details, index) => (
             <Donair_details_col key={index} details={details} />
