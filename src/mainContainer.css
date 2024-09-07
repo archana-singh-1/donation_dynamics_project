@@ -167,7 +167,7 @@
   }
   
   .carousel-container {
-    position: relative;
+    margin-top: 60px;
   }
   
   .carousel-item {
