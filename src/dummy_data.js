@@ -70,5 +70,5 @@ export const data = [
         currency: "USD",
         imgSrc: "/img_9.png",
         donors: 52
-    }
+    },
 ];
