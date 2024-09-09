@@ -2,9 +2,8 @@
 .login-container {
     width: 600px;
     height: 500px;
-    margin: 100px auto;
+    margin: auto;
     padding: 20px;
-    border: 6px solid whitesmoke;
     border-radius: 11px;
     background-color: white;
   }
